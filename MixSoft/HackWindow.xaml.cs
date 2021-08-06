@@ -16,6 +16,7 @@ using MixSoft.Objects.Structs;
 using System.Reflection;
 using System.IO;
 using static MixSoft.Objects.Globals;
+using System.Diagnostics;
 
 namespace MixSoft
 {
@@ -132,6 +133,26 @@ namespace MixSoft
             NetvarManager.netvarList.Clear();
             LoadSkins();
             InitializeComponent();
+
+            try
+            {
+                Process process = Process.GetProcesses().First((Process p) => p.ProcessName == "csgo");
+                if (process == null)
+                {
+                    Environment.Exit(0);
+                }
+                process.EnableRaisingEvents = true;
+                process.Exited += delegate (object s, EventArgs e)
+                {
+                    Environment.Exit(0);
+                };
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("First of all start CS:GO!");
+                Environment.Exit(0);
+            }
+
             List<string> res = CsgoSkinList.Keys.ToList();
             res.Sort();
 
