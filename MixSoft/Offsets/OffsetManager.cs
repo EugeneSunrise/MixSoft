@@ -16,6 +16,7 @@ namespace MixSoft.Offsets
             Offsets.dwGlowObjectManager = SigScanner.ClientSigScan("A1 ? ? ? ? A8 01 75 4B", 1, 4, true);
             Offsets.dwPlayerResource = SigScanner.ClientSigScan("8B 3D ? ? ? ? 85 FF 0F 84 ? ? ? ? 81 C7", 2, 0, true);
             Offsets.dwClientState_ViewAngles = SigScanner.EngineSigScan("F3 0F 11 80 ? ? ? ? F3 0F 10 44 24 38", 4, 0, false);
+            Offsets.dwClientState_ViewAngles = 0x4D90; // hotfix - Waiting for new sig
             Offsets.dwViewMatrix = SigScanner.ClientSigScan("0F 10 05 ? ? ? ? 8D 85 ? ? ? ? B9", 3, 176, true);
             Offsets.dwClientState = SigScanner.EngineSigScan("A1 ? ? ? ? 33 D2 6A 00 6A 00 33 C9 89 B0", 1, 0, true);
             Offsets.dwForceAttack = SigScanner.ClientSigScan("89 0D ? ? ? ? 8B 0D ? ? ? ? 8B F2 8B C1 83 CE 04", 2, 0, true);

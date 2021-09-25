@@ -54,7 +54,8 @@
     <Reference Include="Microsoft.DirectX">
       <HintPath>bin\Debug\Microsoft.DirectX.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.DirectX.Direct3D">
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Microsoft.DirectX.Direct3D.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
