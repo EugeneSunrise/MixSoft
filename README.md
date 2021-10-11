@@ -2,7 +2,7 @@
 
 ## What is MixSoft?
 
-MixSoft is external hack for *CS:GO* written in C#. Only for legit play.
+MixSoft is external hack for *CS:GO* written in C#. Only for legit play. Works on 5EArena ^_^
 
 
 ## Compiling
@@ -40,7 +40,7 @@ Special thanks to [@krxdev-kaan](https://github.com/krxdev-kaan) ([AqHax-CSGO](h
 
 ## Что за MixSoft?
 
-MixSoft это внешний чит для *CS:GO*, написанный на C#. Только для игры по легиту.
+MixSoft это внешний чит для *CS:GO*, написанный на C#. Только для игры по легиту. Работает на 5EArena ^_^
 
 
 ## Компиляция
