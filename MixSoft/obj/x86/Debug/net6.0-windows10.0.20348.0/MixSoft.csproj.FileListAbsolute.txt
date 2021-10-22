@@ -3,7 +3,6 @@ D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\MixSoft
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.runtimeconfig.json
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.dll
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\ref\MixSoft.dll
-D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.pdb
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\Microsoft.Windows.SDK.NET.dll
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\WinRT.Runtime.dll
 D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\Microsoft.DirectX.Direct3D.dll
@@ -24,7 +23,7 @@ D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft
 D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.csproj.CopyComplete
 D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.dll
 D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\ref\MixSoft.dll
-D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.pdb
 D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.genruntimeconfig.cache
 D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.csproj.GenerateResource.cache
-D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.Resource1.resources
+D:\Source\Repos\MixSoft\MixSoft\bin\x86\Debug\net6.0-windows10.0.20348.0\Resources\Skins.txt
+D:\Source\Repos\MixSoft\MixSoft\obj\x86\Debug\net6.0-windows10.0.20348.0\MixSoft.ResourceSkins.resources

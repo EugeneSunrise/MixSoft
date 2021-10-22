@@ -13,11 +13,12 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("MixSoft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Sunrise Studio")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.2.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MixSoft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MixSoft")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.2.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows10.0.20348.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows10.0.20348.0")]
 

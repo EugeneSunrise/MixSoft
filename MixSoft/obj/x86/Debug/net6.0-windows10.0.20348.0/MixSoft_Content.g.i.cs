@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/anon%20for%20ico.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/anon.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/skins.txt")]
 
 

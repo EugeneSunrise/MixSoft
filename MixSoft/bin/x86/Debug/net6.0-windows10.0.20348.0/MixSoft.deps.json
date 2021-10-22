@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "MixSoft/1.0.0": {
+      "MixSoft/2.2": {
         "dependencies": {
           "Microsoft.DirectX.Direct3D": "1.0.2902.0",
           "Microsoft.DirectX": "1.0.2902.0",
@@ -47,7 +47,7 @@
     }
   },
   "libraries": {
-    "MixSoft/1.0.0": {
+    "MixSoft/2.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
