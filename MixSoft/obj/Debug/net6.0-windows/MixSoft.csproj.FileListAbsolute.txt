@@ -1,0 +1,6 @@
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\MixSoft.csproj.AssemblyReference.cache
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\App.g.cs
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\MixSoft_MarkupCompile.cache
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\MixSoft_MarkupCompile.lref
+D:\Source\Repos\MixSoft\MixSoft\obj\Debug\net6.0-windows\HackWindow.g.cs

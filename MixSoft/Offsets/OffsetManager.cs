@@ -61,6 +61,7 @@ namespace MixSoft.Offsets
             Offsets.m_iViewModelIndex = NetvarManager.GetOffsetByName("DT_WeaponCSBase", "m_iViewModelIndex");
             Offsets.m_iEntityQuality = NetvarManager.GetOffsetByName("DT_BaseAttributableItem", "m_iEntityQuality");
             #endregion
+
         }
     }
 }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9n4W0p96sEslWTz18HKY5tYEZHPTRnqfS04PPi5GLtXZ0WCYov7poFOMEy577setFkIq/IPUAbMN33kEqI6GXQ==",
+  "success": true,
+  "projectFilePath": "D:\\Source\\Repos\\MixSoft\\MixSoft\\MixSoft.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rasta\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.20348.21\\microsoft.windows.sdk.net.ref.10.0.20348.21.nupkg.sha512"
+  ],
+  "logs": []
+}
