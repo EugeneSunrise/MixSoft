@@ -1,9 +1,7 @@
-﻿namespace MixSoft.Classes
+﻿namespace MixSoft.Classes;
+public enum SendInputEventType
 {
-    public enum SendInputEventType
-    {
-        InputMouse,
-        InputKeyboard,
-        InputHardware
-    }
+    InputMouse,
+    InputKeyboard,
+    InputHardware
 }

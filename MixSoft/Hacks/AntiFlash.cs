@@ -1,28 +1,23 @@
-﻿using System;
-using System.Threading;
-using MixSoft.Offsets;
+﻿namespace MixSoft.Hacks;
 
-namespace MixSoft.Hacks
+class AntiFlash
 {
-    class AntiFlash
+    public void AntiFuckinFlash(CancellationToken token)
     {
-        public void AntiFuckinFlash(CancellationToken token)
+        while (true)
         {
-            while (true)
+            IntPtr LocalPlayer = Memory.Read<IntPtr>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
+            int flash = Memory.Read<int>((int)(LocalPlayer + Offsets.Offsets.m_flFlashDuration));
+            if (flash > 0)
             {
-                IntPtr LocalPlayer = Memory.Read<IntPtr>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
-                int flash = Memory.Read<int>((int)(LocalPlayer + Offsets.Offsets.m_flFlashDuration));
-                if (flash > 0)
-                {
-                    Memory.Write<int>((int)(LocalPlayer + Offsets.Offsets.m_flFlashDuration), 0);
-                }
-                else { }
-                if (token.IsCancellationRequested)
-                {
-                    token.ThrowIfCancellationRequested();
-                }
-                Thread.Sleep(10);
+                Memory.Write<int>((int)(LocalPlayer + Offsets.Offsets.m_flFlashDuration), 0);
             }
+            else { }
+            if (token.IsCancellationRequested)
+            {
+                token.ThrowIfCancellationRequested();
+            }
+            Thread.Sleep(10);
         }
     }
 }

@@ -1,38 +1,30 @@
-﻿using MixSoft.Offsets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace MixSoft.Objects;
 
-namespace MixSoft.Objects
+static class CBasePlayer
 {
-    static class CBasePlayer
+    public static int LocalPlayerPtr
     {
-        public static int LocalPlayerPtr
+        get
         {
-            get
-            {
-                return Memory.Read<int>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
-            }
+            return Memory.Read<int>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
         }
-        public static int GetViewModelIndex(int index)
+    }
+    public static int GetViewModelIndex(int index)
+    {
+        return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_hViewModel + index * 0x4) & 0xFFF;
+    }
+    public static int ActiveWeaponIndex
+    {
+        get
         {
-            return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_hViewModel + index * 0x4) & 0xFFF;
+            return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_hActiveWeapon) & 0xFFF;
         }
-        public static int ActiveWeaponIndex
+    }
+    public static int Team
+    {
+        get
         {
-            get
-            {
-                return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_hActiveWeapon) & 0xFFF;
-            }
-        }
-        public static int Team
-        {
-            get
-            {
-                return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_iTeamNum);
-            }
+            return Memory.Read<int>(LocalPlayerPtr + Offsets.Offsets.m_iTeamNum);
         }
     }
 }

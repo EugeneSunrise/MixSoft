@@ -1,12 +1,11 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace MixSoft.Data.Raw
+namespace MixSoft.Data.Raw;
+
+[StructLayout(LayoutKind.Sequential)]
+public struct mstudiohitboxset_t
 {
-    [StructLayout(LayoutKind.Sequential)]
-    public struct mstudiohitboxset_t
-    {
-        public int sznameindex;
-        public int numhitboxes;
-        public int hitboxindex;
-    }
+    public int sznameindex;
+    public int numhitboxes;
+    public int hitboxindex;
 }

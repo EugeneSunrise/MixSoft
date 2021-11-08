@@ -1,32 +1,25 @@
-﻿using MixSoft.Objects.Structs;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-
-
-namespace MixSoft.Objects
+﻿namespace MixSoft.Objects;
+class KnifeObj
 {
-    class KnifeObj
-    {
-        public ItemDefinitionIndex itemDefinitionIndex;
-        public string modelName;
+    public ItemDefinitionIndex itemDefinitionIndex;
+    public string modelName;
 
-        public KnifeObj(ItemDefinitionIndex i, string m)
-        {
-            this.itemDefinitionIndex = i;
-            this.modelName = m;
-        }
+    public KnifeObj(ItemDefinitionIndex i, string m)
+    {
+        this.itemDefinitionIndex = i;
+        this.modelName = m;
     }
+}
 
-    static class Constants
+static class Constants
+{
+    public static Dictionary<string, KnifeObj> KnifeList = InitializeList();
+
+    private static Dictionary<string, KnifeObj> InitializeList()
     {
-        public static Dictionary<string, KnifeObj> KnifeList = InitializeList();
+        Dictionary<string, KnifeObj> res = new Dictionary<string, KnifeObj>();
 
-        private static Dictionary<string, KnifeObj> InitializeList()
-        {
-            Dictionary<string, KnifeObj> res = new Dictionary<string, KnifeObj>();
-
-            string[] listNames =    {"BAYONET",
+        string[] listNames =    {"BAYONET",
                                     "FLIP",
                                     "GUT",
                                     "KARAMBIT",
@@ -46,7 +39,7 @@ namespace MixSoft.Objects
                                     "NOMAD",
                                     "SKELETON"};
 
-            string[] itemDefNames = {"BAYONET",
+        string[] itemDefNames = {"BAYONET",
                                     "FLIP",
                                     "GUT",
                                     "KARAMBIT",
@@ -66,7 +59,7 @@ namespace MixSoft.Objects
                                     "NOMAD",
                                     "SKELETON"};
 
-            string[] knifeModels = {"models/weapons/v_knife_bayonet.mdl",
+        string[] knifeModels = {"models/weapons/v_knife_bayonet.mdl",
                                     "models/weapons/v_knife_flip.mdl",
                                     "models/weapons/v_knife_gut.mdl",
                                     "models/weapons/v_knife_karam.mdl",
@@ -86,48 +79,47 @@ namespace MixSoft.Objects
                                     "models/weapons/v_knife_outdoor.mdl",
                                     "models/weapons/v_knife_skeleton.mdl" };
 
-            for (int i = 0; i < 17; i++)
-            {
-                res.Add(listNames[i], new KnifeObj((ItemDefinitionIndex)Enum.Parse(typeof(ItemDefinitionIndex), itemDefNames[i]), knifeModels[i]));
-            }
-
-            return res;
-        }
-    }
-
-    static class Globals
-    {
-        public static bool SkinChangerEnabled = false;
-        public static bool KnifeChangerEnabled = false;
-        public static bool KnifeChangerAnimFixEnabled = false;
-        public static bool ManualLoadEnabled = false;
-        public static string SelectedKnife = "BAYONET";
-
-        private static int _IdleWait = 10;
-        public static int IdleWait
+        for (int i = 0; i < 17; i++)
         {
-            get
-            {
-                return _IdleWait;
-            }
-            set
-            {
-                _IdleWait = 10;
-            }
+            res.Add(listNames[i], new KnifeObj((ItemDefinitionIndex)Enum.Parse(typeof(ItemDefinitionIndex), itemDefNames[i]), knifeModels[i]));
         }
 
-        public static Dictionary<string, SkinObj> CsgoSkinList = new Dictionary<string, SkinObj>();
-        public static List<Skin> LoadedPresets = new List<Skin>();
+        return res;
+    }
+}
+
+static class Globals
+{
+    public static bool SkinChangerEnabled = false;
+    public static bool KnifeChangerEnabled = false;
+    public static bool KnifeChangerAnimFixEnabled = false;
+    public static bool ManualLoadEnabled = false;
+    public static string SelectedKnife = "BAYONET";
+
+    private static int _IdleWait = 10;
+    public static int IdleWait
+    {
+        get
+        {
+            return _IdleWait;
+        }
+        set
+        {
+            _IdleWait = 10;
+        }
     }
 
-    static class GlobalLists
-    {
-        public static EntityList entityList = new EntityList();
-        public static WeaponList weaponList = new WeaponList();
-    }
-     
-    static class RuntimeGlobals
-    {
-        public static int selectedKnifeModelIndex = 0;
-    }
+    public static Dictionary<string, SkinObj> CsgoSkinList = new Dictionary<string, SkinObj>();
+    public static List<Skin> LoadedPresets = new List<Skin>();
+}
+
+static class GlobalLists
+{
+    public static EntityList entityList = new EntityList();
+    public static WeaponList weaponList = new WeaponList();
+}
+
+static class RuntimeGlobals
+{
+    public static int selectedKnifeModelIndex = 0;
 }

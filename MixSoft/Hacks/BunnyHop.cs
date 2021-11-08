@@ -1,33 +1,27 @@
-﻿using MixSoft.Offsets;
-using System;
-using System.Runtime.InteropServices;
-using System.Threading;
+﻿namespace MixSoft.Hacks;
 
-namespace MixSoft.Hacks
+class BunnyHop
 {
-    class BunnyHop
+    [DllImport("user32.dll")]
+    static extern bool GetAsyncKeyState(int vKey);
+    public void Bhop(CancellationToken token)
     {
-        [DllImport("user32.dll")]
-        static extern bool GetAsyncKeyState(int vKey);
-        public void Bhop(CancellationToken token)
+        while (true)
         {
-            while (true)
+            IntPtr localPlayer = Memory.Read<IntPtr>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
+            int flag = Memory.Read<int>((int)localPlayer + Offsets.Offsets.m_fFlags);
+            if (GetAsyncKeyState(32))
             {
-                IntPtr localPlayer = Memory.Read<IntPtr>(Memory.clientBase + Offsets.Offsets.dwLocalPlayer);
-                int flag = Memory.Read<int>((int)localPlayer + Offsets.Offsets.m_fFlags);
-                if (GetAsyncKeyState(32))
+                if (flag == 257)
                 {
-                    if (flag == 257)
-                    {
-                        Memory.Write<IntPtr>(Memory.clientBase + Offsets.Offsets.dwForceJump, 6);
-                    }
-                    else { }
-                    Thread.Sleep(1);
+                    Memory.Write<IntPtr>(Memory.clientBase + Offsets.Offsets.dwForceJump, 6);
                 }
-                if (token.IsCancellationRequested)
-                {
-                    token.ThrowIfCancellationRequested();
-                }
+                else { }
+                Thread.Sleep(1);
+            }
+            if (token.IsCancellationRequested)
+            {
+                token.ThrowIfCancellationRequested();
             }
         }
     }

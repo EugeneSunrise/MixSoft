@@ -1,50 +1,47 @@
-﻿using MixSoft.Offsets;
+﻿namespace MixSoft.Objects;
 
-namespace MixSoft.Objects
+class EntityList
 {
-    class EntityList
-    {
-        private CBaseEntity[] entities = new CBaseEntity[4096];
-        
-        public EntityList()
-        {
-            for (int i = 0; i < entities.Length; i++)
-            {
-                entities[i] = new CBaseEntity(i);
-            }
-        }
+    private CBaseEntity[] entities = new CBaseEntity[4096];
 
-        public CBaseEntity this[int index]
+    public EntityList()
+    {
+        for (int i = 0; i < entities.Length; i++)
         {
-            get
-            {
-                try
-                {
-                    return entities[index];
-                }
-                catch
-                {
-                    return null;
-                }
-            }
+            entities[i] = new CBaseEntity(i);
         }
     }
 
-    class CBaseEntity
+    public CBaseEntity this[int index]
     {
-        public int index;
-
-        public CBaseEntity(int index)
+        get
         {
-            this.index = index;
-        }
-
-        public int Base
-        {
-            get
+            try
             {
-                return Memory.Read<int>(Memory.clientBase + Offsets.Offsets.dwEntityList + index * 0x10);
+                return entities[index];
             }
+            catch
+            {
+                return null;
+            }
+        }
+    }
+}
+
+class CBaseEntity
+{
+    public int index;
+
+    public CBaseEntity(int index)
+    {
+        this.index = index;
+    }
+
+    public int Base
+    {
+        get
+        {
+            return Memory.Read<int>(Memory.clientBase + Offsets.Offsets.dwEntityList + index * 0x10);
         }
     }
 }

@@ -1,23 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Threading;
-using MixSoft.Hacks;
-using MixSoft.Data;
-using System.Windows.Controls;
-using MixSoft.Classes;
-using MixSoft.Offsets;
-using System.Runtime.InteropServices;
-using System.Windows.Interop;
-using System.Collections.Generic;
-using MixSoft.Objects;
-using System.Linq;
-using MixSoft.Objects.Structs;
-using System.IO;
-using static MixSoft.Objects.Globals;
-using System.Diagnostics;
-
-namespace MixSoft;
+﻿namespace MixSoft;
 public partial class HackWindow : Window
 {
     #region Tokens
