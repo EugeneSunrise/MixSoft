@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MixSoft": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

@@ -17,15 +17,13 @@ global using MixSoft.Objects.Structs;
 global using System.IO;
 global using static MixSoft.Objects.Globals;
 global using System.Diagnostics;
-global using Microsoft.DirectX;
+//global using Microsoft.DirectX;
 global using MixSoft.Data.Raw;
 global using MixSoft.Gfx.Math;
 global using MixSoft.Data.Internal;
 global using System.Drawing;
-global using Microsoft.DirectX.Direct3D;
+//global using Microsoft.DirectX.Direct3D;
 global using MixSoft.sys;
 global using static MixSoft.Objects.GlobalLists;
 global using System.ComponentModel;
-
-
-
+global using System.Runtime.CompilerServices;

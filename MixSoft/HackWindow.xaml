@@ -333,7 +333,7 @@
                 Canvas.Top="2"/>
 
             <TextBlock 
-                ToolTip="Ver. 3.0 (XX.11.2021)"
+                ToolTip="Ver. 3.0 (9.11.2021)"
                 Canvas.Left="10"
                 TextWrapping="Wrap"
                 Text="About"
@@ -341,6 +341,23 @@
                 Foreground="White"
                 Canvas.Top="2"/>
 
+            <TextBlock 
+                Canvas.Left="10"
+                TextWrapping="Wrap"
+                Text="Telegram: icesunrise"
+                FontSize="12"
+                Foreground="White"
+                Canvas.Top="210"
+                Opacity="0.3"/>
+            
+            <TextBlock 
+                Canvas.Left="10"
+                TextWrapping="Wrap"
+                Text="GitHub: EugeneSunrise"
+                FontSize="12"
+                Foreground="White"
+                Canvas.Top="225"
+                Opacity="0.3"/>
         </Canvas>
     </Border>
 </Window>

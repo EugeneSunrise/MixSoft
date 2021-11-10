@@ -44,8 +44,6 @@ class KnifeChangerAnimationFix
         int butterflyModelIndex = 0;
         int falchionModelIndex = 0;
         int cssModelIndex = 0;
-        //int pushModelIndex = 0;
-        //int bowieModelIndex = 0;
         int ursusModelIndex = 0;
         int cordModelIndex = 0;
         int canisModelIndex = 0;
@@ -56,26 +54,11 @@ class KnifeChangerAnimationFix
 
         while (true)
         {
-            //if (!Globals.KnifeChangerEnabled || !Globals.KnifeChangerAnimFixEnabled)
-            //{
-            //    Thread.Sleep(Globals.IdleWait);
-            //    shouldReloadModelIndex = true;
-            //    continue;
-            //}
-            //if (!Engine.InGame)
-            //{
-            //    Thread.Sleep(Globals.IdleWait);
-            //    shouldReloadModelIndex = true;
-            //    continue;
-            //}
-
             if (shouldReloadModelIndex)
             {
                 butterflyModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_butterfly.mdl");
                 falchionModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_falchion_advanced.mdl");
                 cssModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_css.mdl");
-                //pushModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_push.mdl");
-                //bowieModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_survival_bowie.mdl");
                 ursusModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_ursus.mdl");
                 cordModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_cord.mdl");
                 canisModelIndex = Engine.GetModelIndexByName("models/weapons/v_knife_canis.mdl");
@@ -124,39 +107,6 @@ class KnifeChangerAnimationFix
                         break;
                 }
             }
-            //else if (currentWeapon.ViewModelEntityModelIndex == pushModelIndex)
-            //{
-            //    switch (currentWeapon.Sequence)
-            //    {
-            //        case (int)Sequence.SEQUENCE_DEFAULT_IDLE2:
-            //            currentWeapon.Sequence = (int)Sequence.SEQUENCE_DAGGERS_IDLE1;
-            //            break;
-            //        case (int)Sequence.SEQUENCE_DEFAULT_LIGHT_MISS1:
-            //        case (int)Sequence.SEQUENCE_DEFAULT_LIGHT_MISS2:
-            //            currentWeapon.Sequence = RandomSequence((int)Sequence.SEQUENCE_DAGGERS_LIGHT_MISS1, (int)Sequence.SEQUENCE_DAGGERS_LIGHT_MISS5);
-            //            break;
-            //        case (int)Sequence.SEQUENCE_DEFAULT_HEAVY_MISS1:
-            //            currentWeapon.Sequence = RandomSequence((int)Sequence.SEQUENCE_DAGGERS_HEAVY_MISS2, (int)Sequence.SEQUENCE_DAGGERS_HEAVY_MISS1);
-            //            break;
-            //    }
-            //}
-            //else if (currentWeapon.ViewModelEntityModelIndex == bowieModelIndex)
-            //{
-            //    switch (currentWeapon.Sequence)
-            //    {
-            //        case (int)Sequence.SEQUENCE_DEFAULT_DRAW:
-            //        case (int)Sequence.SEQUENCE_DEFAULT_IDLE1:
-            //            currentWeapon.Sequence = currentWeapon.Sequence;
-            //            break;
-            //        case (int)Sequence.SEQUENCE_DEFAULT_IDLE2:
-            //            currentWeapon.Sequence = (int)Sequence.SEQUENCE_BOWIE_IDLE1;
-            //            break;
-            //        default:
-            //            currentWeapon.Sequence = currentWeapon.Sequence - 1;
-            //            break;
-
-            //    }
-            //}
             else if (currentWeapon.ViewModelEntityModelIndex == ursusModelIndex ||
                      currentWeapon.ViewModelEntityModelIndex == cordModelIndex ||
                      currentWeapon.ViewModelEntityModelIndex == canisModelIndex ||
@@ -198,7 +148,6 @@ class KnifeChangerAnimationFix
             Thread.Sleep(TimeSpan.FromMilliseconds(0.1));
         }
     }
-    // Too bad
     public static int RandomSequence(int min, int max)
     {
         Random random = new Random();

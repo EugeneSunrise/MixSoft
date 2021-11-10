@@ -59,7 +59,7 @@ public class Player :
         }
 
         // get matrices
-        MatrixViewProjection = Matrix.TransposeMatrix(gameProcess.ModuleClient.Read<Matrix>(Offsets.Offsets.dwViewMatrix));
+        //MatrixViewProjection = Matrix.TransposeMatrix(gameProcess.ModuleClient.Read<Matrix>(Offsets.Offsets.dwViewMatrix));
 
         // read data
         ViewOffset = gameProcess.Process.Read<Vector3>(AddressBase + Offsets.Offsets.m_vecViewOffset);

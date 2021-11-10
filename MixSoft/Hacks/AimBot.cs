@@ -257,7 +257,7 @@ public class AimBot :
             return false;
         }
 
-        Classes.Extensions.MouseMove(aimPixels.X, aimPixels.Y);
+        Extensions.MouseMove(aimPixels.X, aimPixels.Y);
         return true;
     }
 

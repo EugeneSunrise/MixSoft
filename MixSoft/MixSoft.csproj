@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.20348.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Resources\anon.ico</ApplicationIcon>
@@ -10,44 +9,25 @@
     <Platforms>AnyCPU;x86;x64</Platforms>
     <SignAssembly>False</SignAssembly>
     <DebugType>embedded</DebugType>
-    <Version>2.2</Version>
+    <Version>3.0</Version>
     <Copyright>Sunrise Studio</Copyright>
     <PackageIcon>MixSoftEmpire.ico</PackageIcon>
+    <Description>FUCK VALVE</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Skins.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Microsoft.DirectX">
-      <HintPath>..\..\MixSoft2.1\MixSoft\bin\Release\Microsoft.DirectX.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.DirectX.Direct3D">
-      <HintPath>..\..\MixSoft2.1\MixSoft\bin\Release\Microsoft.DirectX.Direct3D.dll</HintPath>
-    </Reference>
+    <None Remove="Resources\Skins.dat" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Resources\anon.ico" />
-    <Content Include="Resources\Skins.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="ResourceSkins.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ResourceSkins.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="ResourceSkins.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourceSkins.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\Skins.dat">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.CompilerServices.VisualC" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

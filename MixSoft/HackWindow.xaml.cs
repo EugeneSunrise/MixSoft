@@ -1,14 +1,16 @@
-﻿namespace MixSoft;
+﻿using System.Reflection;
+
+namespace MixSoft;
 public partial class HackWindow : Window
 {
     #region Tokens
-    CancellationTokenSource cancelTokenSourceBhop = null;
-    CancellationTokenSource cancelTokenSourceRadar = null;
-    CancellationTokenSource cancelTokenSourceWh = null;
-    CancellationTokenSource cancelTokenSourceAntiFlash = null;
-    CancellationTokenSource cancelTokenSourceSkinChanger = null;
-    CancellationTokenSource cancelTokenSourceKnifeChanger = null;
-    CancellationTokenSource cancelTokenSourceKnifeAnimationChanger = null;
+    CancellationTokenSource cancelTokenSourceBhop;
+    CancellationTokenSource cancelTokenSourceRadar;
+    CancellationTokenSource cancelTokenSourceWh;
+    CancellationTokenSource cancelTokenSourceAntiFlash;
+    CancellationTokenSource cancelTokenSourceSkinChanger;
+    CancellationTokenSource cancelTokenSourceKnifeChanger;
+    CancellationTokenSource cancelTokenSourceKnifeAnimationChanger;
     #endregion
 
     #region Global HotKey
@@ -147,6 +149,7 @@ public partial class HackWindow : Window
         foreach (string s in knives) comboKnifeSelector.Items.Add(s);
     }
 
+    
     private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
     {
         Environment.Exit(0);
@@ -345,9 +348,10 @@ public partial class HackWindow : Window
 
     private void LoadSkins()
     {
-        string resourcePath = @"Resources\Skins.txt";
+        var assembly = Assembly.GetExecutingAssembly();
+        string resourcePath = "MixSoft.Resources.Skins.dat";
 
-        using (StreamReader reader = new(resourcePath))
+        using (StreamReader reader = new StreamReader(assembly.GetManifestResourceStream(resourcePath)))
         {
             while (!reader.EndOfStream)
             {

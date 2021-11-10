@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9n4W0p96sEslWTz18HKY5tYEZHPTRnqfS04PPi5GLtXZ0WCYov7poFOMEy577setFkIq/IPUAbMN33kEqI6GXQ==",
+  "dgSpecHash": "CsS4I4j2YJoc2hUnXU3qs2M4cWYbZIEs242LMvHmP3dQ13fD9kPWAnTAALRct5O/bzo4ri78khnKdG/NEdfYrw==",
   "success": true,
   "projectFilePath": "D:\\Source\\Repos\\MixSoft\\MixSoft\\MixSoft.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rasta\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.20348.21\\microsoft.windows.sdk.net.ref.10.0.20348.21.nupkg.sha512"
+    "C:\\Users\\rasta\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rasta\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\rasta\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\rasta\\.nuget\\packages\\system.runtime.compilerservices.visualc\\4.3.0\\system.runtime.compilerservices.visualc.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

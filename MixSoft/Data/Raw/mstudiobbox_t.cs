@@ -1,7 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using Microsoft.DirectX;
-
-namespace MixSoft.Data.Raw;
+﻿namespace MixSoft.Data.Raw;
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct mstudiobbox_t

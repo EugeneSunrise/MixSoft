@@ -1,7 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using Microsoft.DirectX;
-
-namespace MixSoft.Data.Raw;
+﻿namespace MixSoft.Data.Raw;
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct mstudiobone_t
@@ -9,6 +6,7 @@ public unsafe struct mstudiobone_t
     public int sznameindex;
     public int parent; // parent bone
     public fixed int bonecontroller[6];     // bone controller index, -1 == none
+    //public Microsoft.DirectX.Vector3 pos;
     public Vector3 pos;
     public Quaternion quat;
     public Vector3 rot;
