@@ -1,3 +1,7 @@
+## NOTICE
+NEW VERSION IS STILL IN DEVELOPMENT(12.12.2021) -->
+Release time: ~January 2022
+
 <h3 align="center">ENG:</h3>
 
 ## What is MixSoft?
