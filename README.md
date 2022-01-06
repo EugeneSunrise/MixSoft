@@ -2,6 +2,9 @@
 NEW VERSION IS STILL IN DEVELOPMENT(12.12.2021) -->
 Release time: ~January 2022
 
+## Unknowncheats thread
+[Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
+
 <h3 align="center">ENG:</h3>
 
 ## What is MixSoft?
