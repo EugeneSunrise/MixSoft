@@ -1,6 +1,5 @@
 ## NOTICE
-NEW VERSION IS STILL IN DEVELOPMENT(12.12.2021) -->
-Release time: ~January 2022
+Release version 3.0 15 January 2022 (.NET6)
 
 ## Unknowncheats thread
 [Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
