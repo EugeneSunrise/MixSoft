@@ -14,7 +14,7 @@ MixSoft is external hack for *CS:GO* written in C#. Only for legit play. Works o
 
 ## Compiling
 
-**Compile as x86 or Download last stable version(2.1 .NET Framework 4.8) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1(17.12.2021)/MixSoft17.12.2021.rar)**
+**Compile as x86 or Download last stable version(2.2 .NET Framework 4.8) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.2/MixSoft.2.2.Final.rar)**
 
 
 ## Features
@@ -52,7 +52,7 @@ MixSoft это внешний чит для *CS:GO*, написанный на C
 
 ## Компиляция
 
-**Скомпилировать в x86 или скачать последнюю стабильную версию(2.1 .NET Framework 4.8) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1(17.12.2021)/MixSoft17.12.2021.rar)**
+**Скомпилировать в x86 или скачать последнюю стабильную версию(2.2 .NET Framework 4.8) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.2/MixSoft.2.2.Final.rar)**
 
 
 ## Функции
