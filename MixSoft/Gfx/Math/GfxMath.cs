@@ -6,7 +6,8 @@ public static class GfxMath
     // Angle between 3d vectors
     public static float AngleTo(this Vector3 vector, Vector3 other)
     {
-        return AngleBetweenUnitVectors(vector.Normalized(), other.Normalized());
+        return AngleBetweenUnitVectors(vector.Normalized(), other.Normalized()); 
+        //return AngleBetweenUnitVectors(vector, other);
     }
 
 
@@ -22,6 +23,27 @@ public static class GfxMath
     /// "https://en.wikipedia.org/wiki/3D_projection"
     /// "https://en.wikipedia.org/wiki/Projection_(linear_algebra)"
     /// </remarks>
+    //public static float AngleToSigned(this Vector3 vector, Vector3 other, Vector3 about)
+    //{
+    //    // validate
+    //    if (vector.IsParallelTo(about, 1E-9f))
+    //    {
+    //        throw new ArgumentException($"'{nameof(vector)}' is parallel to '{nameof(about)}'.");
+    //    }
+    //    if (other.IsParallelTo(about, 1E-9f))
+    //    {
+    //        throw new ArgumentException($"'{nameof(other)}' is parallel to '{nameof(about)}'.");
+    //    }
+
+    //    // project vectors on a plane
+    //    var plane = new Plane3D(about, new Vector3());
+    //    var vectorOnPlane = plane.ProjectVector(vector).vector.Normalized();
+    //    var otherOnPlane = plane.ProjectVector(other).vector.Normalized();
+
+    //    // get angle
+    //    var sign = vectorOnPlane.Cross(otherOnPlane).Normalized().Dot(plane.Normal);
+    //    return AngleBetweenUnitVectors(vectorOnPlane, otherOnPlane) * sign;
+    //}
     public static float AngleToSigned(this Vector3 vector, Vector3 other, Vector3 about)
     {
         // validate
@@ -40,7 +62,7 @@ public static class GfxMath
         var otherOnPlane = plane.ProjectVector(other).vector.Normalized();
 
         // get angle
-        var sign = vectorOnPlane.Cross(otherOnPlane).Normalized().Dot(plane.Normal);
+        var sign = vectorOnPlane.Cross(otherOnPlane).Dot(plane.Normal);
         return AngleBetweenUnitVectors(vectorOnPlane, otherOnPlane) * sign;
     }
 
@@ -102,24 +124,6 @@ public static class GfxMath
     }
 
 
-    // Get half-sphere vertices.
-    /// <returns>
-    /// Returns array of 3d circles. Each circle is array of vertices.
-    /// </returns>
-    public static Vector3[][] GetHalfSphere(Vector3 origin, Vector3 normal, float radius, int segments, int layers)
-    {
-        normal.Normalize();
-        var verticesByLayer = new Vector3[layers][];
-        for (var layerId = 0; layerId < layers; layerId++)
-        {
-            var radiusLayer = radius - layerId * (radius / layers);
-            var originLayer = origin + normal * ((float)System.Math.Cos(System.Math.Asin(radiusLayer / radius)) * radius);
-            verticesByLayer[layerId] = GetCircleVertices(originLayer, normal, radiusLayer, segments);
-        }
-        return verticesByLayer;
-    }
-
-
     // Get matrix from given axis and origin
     public static Matrix GetMatrix(Vector3 xAxis, Vector3 yAxis, Vector3 zAxis, Vector3 origin)
     {
@@ -146,46 +150,46 @@ public static class GfxMath
 
 
     // Get viewport matrix
-    public static Matrix GetMatrixViewport(in Viewport viewport)
-    {
-        return new Matrix
-        {
-            M11 = viewport.Width * 0.5f,
-            M12 = 0,
-            M13 = 0,
-            M14 = 0,
+    //public static Matrix GetMatrixViewport(in Viewport viewport)
+    //{
+    //    return new Matrix
+    //    {
+    //        M11 = viewport.Width * 0.5f,
+    //        M12 = 0,
+    //        M13 = 0,
+    //        M14 = 0,
 
-            M21 = 0,
-            M22 = -viewport.Height * 0.5f,
-            M23 = 0,
-            M24 = 0,
+    //        M21 = 0,
+    //        M22 = -viewport.Height * 0.5f,
+    //        M23 = 0,
+    //        M24 = 0,
 
-            M31 = 0,
-            M32 = 0,
-            M33 = viewport.MaxZ - viewport.MinZ,
-            M34 = 0,
+    //        M31 = 0,
+    //        M32 = 0,
+    //        M33 = viewport.MaxZ - viewport.MinZ,
+    //        M34 = 0,
 
-            M41 = viewport.X + viewport.Width * 0.5f,
-            M42 = viewport.Y + viewport.Height * 0.5f,
-            M43 = viewport.MinZ,
-            M44 = 1
-        };
-    }
+    //        M41 = viewport.X + viewport.Width * 0.5f,
+    //        M42 = viewport.Y + viewport.Height * 0.5f,
+    //        M43 = viewport.MinZ,
+    //        M44 = 1
+    //    };
+    //}
 
 
     // Get viewport matrix
-    public static Matrix GetMatrixViewport(System.Drawing.Size screenSize)
-    {
-        return GetMatrixViewport(new Viewport
-        {
-            X = 0,
-            Y = 0,
-            Width = screenSize.Width,
-            Height = screenSize.Height,
-            MinZ = 0,
-            MaxZ = 1,
-        });
-    }
+    //public static Matrix GetMatrixViewport(System.Drawing.Size screenSize)
+    //{
+    //    return GetMatrixViewport(new Viewport
+    //    {
+    //        X = 0,
+    //        Y = 0,
+    //        Width = screenSize.Width,
+    //        Height = screenSize.Height,
+    //        MinZ = 0,
+    //        MaxZ = 1,
+    //    });
+    //}
 
 
     // Get orthogonal axis from given normal

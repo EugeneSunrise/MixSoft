@@ -6,14 +6,11 @@ public unsafe struct mstudiobone_t
     public int sznameindex;
     public int parent; // parent bone
     public fixed int bonecontroller[6];     // bone controller index, -1 == none
-    //public Microsoft.DirectX.Vector3 pos;
     public Vector3 pos;
-    public Quaternion quat;
     public Vector3 rot;
     public Vector3 posscale;
     public Vector3 rotscale;
     public matrix3x4_t poseToBone;
-    public Quaternion qAlignment;
     public int flags;
     public int proctype;
     public int procindex;                   // procedural rule

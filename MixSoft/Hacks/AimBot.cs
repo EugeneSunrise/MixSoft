@@ -20,13 +20,13 @@ public class AimBot :
 
     /// Aim bot field of view (fov) to find targets (in radians).
     /// </summary>
-    public static float AimBotFov { get; set; } = 2f.DegreeToRadian();
+    public static float AimBotFov { get; set; } = 10f.DegreeToRadian();
 
 
     /// Parameter to control smoothness of aim bot [1..N].
     /// 1 = no smoothing, bigger number - more smoothing
     /// </summary>
-    public float AimBotSmoothing { get; set; } = 5;
+    public float AimBotSmoothing { get; set; } = 2;
 
     /// <inheritdoc />
     protected override string ThreadName => nameof(AimBot);
@@ -151,7 +151,6 @@ public class AimBot :
 
         // try mouse down to get into normal state
         var wait = TryMouseDown();
-
         // try to move mouse on a target
         wait |= TryMouseMove(aimPixels);
 
@@ -220,7 +219,7 @@ public class AimBot :
     /// Get aim angle to a point.
     /// </summary>
     /// <param name="pointWorld">A point (in world) to which aim angles are calculated.</param>
-    /// <param name="angleSize">Angle size (in radians) between aim direction and desired aim direction (direction to <see cref="pointWorld"/>).</param>
+    /// <param name="angleSize">Angle size (in radians) between aim direction and desired aim directiozn (direction to <see cref="pointWorld"/>).</param>
     /// <param name="aimAngles">Euler angles to aim target (in radians).</param>
     private void GetAimAngles(Vector3 pointWorld, out float angleSize, out Vector2 aimAngles)
     {
@@ -234,12 +233,13 @@ public class AimBot :
         );
     }
 
-
     /// Get pixels to move in a screen (from aim angles).
     /// </summary>
     private void GetAimPixels(Vector2 aimAngles, out Point aimPixels)
     {
         var fovRatio = 90.0 / GameData.Player.Fov;
+        aimAngles.X = aimAngles.X * 10;
+        aimAngles.Y = aimAngles.Y * 10;
         aimPixels = new Point
         (
             (int)Math.Round(aimAngles.X / AnglePerPixel * fovRatio),

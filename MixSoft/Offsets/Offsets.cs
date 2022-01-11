@@ -51,4 +51,7 @@ public class Offsets
     public static Int32 m_nSequence;
     public static Int32 m_iViewModelIndex;
     public static Int32 m_iEntityQuality;
+
+
+
 }

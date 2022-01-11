@@ -11,7 +11,7 @@ public class GameProcess :
 
     private const string NAME_MODULE_ENGINE = "engine.dll";
 
-    private const string NAME_WINDOW = "Counter-Strike: Global Offensive";
+    private const string NAME_WINDOW = "Counter-Strike: Global Offensive - Direct3D 9";
 
     #endregion
 
