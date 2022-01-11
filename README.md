@@ -1,3 +1,10 @@
+## NOTICE
+NEW VERSION IS STILL IN DEVELOPMENT(12.12.2021) -->
+Release time: ~January 2022
+
+## Unknowncheats thread
+[Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
+
 <h3 align="center">ENG:</h3>
 
 ## What is MixSoft?
@@ -7,7 +14,7 @@ MixSoft is external hack for *CS:GO* written in C#. Only for legit play. Works o
 
 ## Compiling
 
-**Compile as x86 or Download last stable version(2.1 .NET Framework 4.8) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1/MixSoft2.1.rar)**
+**Compile as x86 or Download last stable version(2.1 .NET Framework 4.8) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1(17.12.2021)/MixSoft17.12.2021.rar)**
 
 
 ## Features
@@ -45,7 +52,7 @@ MixSoft это внешний чит для *CS:GO*, написанный на C
 
 ## Компиляция
 
-**Скомпилировать в x86 или скачать последнюю стабильную версию(2.1 .NET Framework 4.8) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1/MixSoft2.1.rar)**
+**Скомпилировать в x86 или скачать последнюю стабильную версию(2.1 .NET Framework 4.8) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.1(17.12.2021)/MixSoft17.12.2021.rar)**
 
 
 ## Функции
