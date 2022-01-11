@@ -1,13 +1,11 @@
 ﻿namespace MixSoft.Gfx.Math;
-
 public static class GfxMath
 {
 
     // Angle between 3d vectors
     public static float AngleTo(this Vector3 vector, Vector3 other)
     {
-        return AngleBetweenUnitVectors(vector.Normalized(), other.Normalized()); 
-        //return AngleBetweenUnitVectors(vector, other);
+        return AngleBetweenUnitVectors(vector.Normalized(), other.Normalized());
     }
 
 
@@ -23,27 +21,6 @@ public static class GfxMath
     /// "https://en.wikipedia.org/wiki/3D_projection"
     /// "https://en.wikipedia.org/wiki/Projection_(linear_algebra)"
     /// </remarks>
-    //public static float AngleToSigned(this Vector3 vector, Vector3 other, Vector3 about)
-    //{
-    //    // validate
-    //    if (vector.IsParallelTo(about, 1E-9f))
-    //    {
-    //        throw new ArgumentException($"'{nameof(vector)}' is parallel to '{nameof(about)}'.");
-    //    }
-    //    if (other.IsParallelTo(about, 1E-9f))
-    //    {
-    //        throw new ArgumentException($"'{nameof(other)}' is parallel to '{nameof(about)}'.");
-    //    }
-
-    //    // project vectors on a plane
-    //    var plane = new Plane3D(about, new Vector3());
-    //    var vectorOnPlane = plane.ProjectVector(vector).vector.Normalized();
-    //    var otherOnPlane = plane.ProjectVector(other).vector.Normalized();
-
-    //    // get angle
-    //    var sign = vectorOnPlane.Cross(otherOnPlane).Normalized().Dot(plane.Normal);
-    //    return AngleBetweenUnitVectors(vectorOnPlane, otherOnPlane) * sign;
-    //}
     public static float AngleToSigned(this Vector3 vector, Vector3 other, Vector3 about)
     {
         // validate
@@ -124,6 +101,24 @@ public static class GfxMath
     }
 
 
+    //// Get half-sphere vertices.
+    ///// <returns>
+    ///// Returns array of 3d circles. Each circle is array of vertices.
+    ///// </returns>
+    //public static Vector3[][] GetHalfSphere(Vector3 origin, Vector3 normal, float radius, int segments, int layers)
+    //{
+    //    normal.Normalize();
+    //    var verticesByLayer = new Vector3[layers][];
+    //    for (var layerId = 0; layerId < layers; layerId++)
+    //    {
+    //        var radiusLayer = radius - layerId * (radius / layers);
+    //        var originLayer = origin + normal * ((float)System.Math.Cos(System.Math.Asin(radiusLayer / radius)) * radius);
+    //        verticesByLayer[layerId] = GetCircleVertices(originLayer, normal, radiusLayer, segments);
+    //    }
+    //    return verticesByLayer;
+    //}
+
+
     // Get matrix from given axis and origin
     public static Matrix GetMatrix(Vector3 xAxis, Vector3 yAxis, Vector3 zAxis, Vector3 origin)
     {
@@ -149,7 +144,7 @@ public static class GfxMath
     }
 
 
-    // Get viewport matrix
+    //// Get viewport matrix
     //public static Matrix GetMatrixViewport(in Viewport viewport)
     //{
     //    return new Matrix
@@ -178,7 +173,7 @@ public static class GfxMath
 
 
     // Get viewport matrix
-    //public static Matrix GetMatrixViewport(System.Drawing.Size screenSize)
+    //public static Matrix GetMatrixViewport(Size screenSize)
     //{
     //    return GetMatrixViewport(new Viewport
     //    {

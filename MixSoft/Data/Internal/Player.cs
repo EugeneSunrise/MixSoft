@@ -51,46 +51,16 @@ public class Player :
         return gameProcess.ModuleClient.Read<IntPtr>(Offsets.Offsets.dwLocalPlayer);
     }
 
-    public Vector3 FUckingAssHole(Vector3 fir, Vector3 sec)
-    {
-        Vector3 zalupa = new Vector3();
-        zalupa.X = fir.X + sec.X;
-        zalupa.Y = fir.Y + sec.Y;
-        zalupa.Z = fir.Z + sec.Z;
-        return zalupa;
-    }
     public override bool Update(GameProcess gameProcess)
     {
         if (!base.Update(gameProcess))
         {
             return false;
         }
-        //////////////////////////////////////
-        //Matrix test = gameProcess.ModuleClient.Read<Matrix>(Offsets.Offsets.dwViewMatrix);
-        //Dictionary<string, object> kek = new Dictionary<string, object>();
-
-        //foreach (var item in test.GetType().GetFields())
-        //{
-        //    kek.Add(item.Name, item.GetValue(test));
-           
-        //}
-        //Matrix testfuck = gameProcess.ModuleClient.Read<Matrix>(Offsets.Offsets.dwViewMatrix);
-        //var a = test.GetType();
-        //// get matrices
-        //Matrix lol = new Matrix();
-        //var c = Matrix.TransposeMatrix(test);
-        ////////////////////////////////////////////
         MatrixViewProjection = gameProcess.ModuleClient.Read<Matrix>(Offsets.Offsets.dwViewMatrix);
-
         // read data
         ViewOffset = gameProcess.Process.Read<Vector3>(AddressBase + Offsets.Offsets.m_vecViewOffset);
-
-        //EyePosition = Origin + ViewOffset;
-        EyePosition = FUckingAssHole(Origin, ViewOffset);
-        //Vector3 test = Origin.X + ViewOffset.X;
-        int b = 1;
-        //EyePosition.X = Origin.X + ViewOffset.X;
-        //EyePosition.X = Origin.X + ViewOffset.X;
+        EyePosition = Origin + ViewOffset;
         ViewAngles = gameProcess.Process.Read<Vector3>(gameProcess.ModuleEngine.Read<IntPtr>(Offsets.Offsets.dwClientState) + Offsets.Offsets.dwClientState_ViewAngles);
         AimPunchAngle = gameProcess.Process.Read<Vector3>(AddressBase + Offsets.Offsets.m_aimPunchAngle);
         Fov = gameProcess.Process.Read<int>(AddressBase + Offsets.Offsets.m_iFOV);
