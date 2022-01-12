@@ -1,5 +1,9 @@
 ## NOTICE
-Release version 3.0 15 January 2022 (.NET6)
+NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
+
+- New architecture (first cheat on .NET6 in the world)
+- Built-in Skin Changer (nSkinz loader)
+- Keep calm and fuck everyone
 
 ## Unknowncheats thread
 [Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
@@ -12,6 +16,8 @@ MixSoft is external hack for *CS:GO* written in C#. Only for legit play. Works o
 
 
 ## Compiling
+
+**Compile as x86 or Download last stable version(3.0 .NET 6) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/3.0/MixSoft3.0.rar)**
 
 **Compile as x86 or Download last stable version(2.2 .NET Framework 4.8) from [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.2/MixSoft.2.2.Final.rar)**
 
@@ -50,6 +56,8 @@ MixSoft это внешний чит для *CS:GO*, написанный на C
 
 
 ## Компиляция
+
+**Скомпилировать в x86 или скачать последнюю стабильную версию(3.0 .NET 6) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/3.0/MixSoft3.0.rar)**
 
 **Скомпилировать в x86 или скачать последнюю стабильную версию(2.2 .NET Framework 4.8) из [Releases](https://github.com/EugeneSunrise/MixSoft/releases/download/2.2/MixSoft.2.2.Final.rar)**
 
