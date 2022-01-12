@@ -20,13 +20,13 @@ public class AimBot :
 
     /// Aim bot field of view (fov) to find targets (in radians).
     /// </summary>
-    public static float AimBotFov { get; set; } = 10f.DegreeToRadian();
+    public static float AimBotFov { get; set; } = 2f.DegreeToRadian();
 
 
     /// Parameter to control smoothness of aim bot [1..N].
     /// 1 = no smoothing, bigger number - more smoothing
     /// </summary>
-    public float AimBotSmoothing { get; set; } = 2;
+    public float AimBotSmoothing { get; set; } = 5;
 
     /// <inheritdoc />
     protected override string ThreadName => nameof(AimBot);
@@ -231,8 +231,6 @@ public class AimBot :
             aimDirectionDesired.AngleToSigned(aimDirection, new Vector3(0, 0, 1)),
             aimDirectionDesired.AngleToSigned(aimDirection, aimDirectionDesired.Cross(new Vector3(0, 0, 1)).Normalized())
         );
-        //aimAngles.X *= 10;
-        //aimAngles.Y *= 10;
     }
 
     /// Get pixels to move in a screen (from aim angles).

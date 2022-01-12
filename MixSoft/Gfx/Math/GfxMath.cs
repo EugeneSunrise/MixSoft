@@ -100,25 +100,6 @@ public static class GfxMath
         return vertices;
     }
 
-
-    //// Get half-sphere vertices.
-    ///// <returns>
-    ///// Returns array of 3d circles. Each circle is array of vertices.
-    ///// </returns>
-    //public static Vector3[][] GetHalfSphere(Vector3 origin, Vector3 normal, float radius, int segments, int layers)
-    //{
-    //    normal.Normalize();
-    //    var verticesByLayer = new Vector3[layers][];
-    //    for (var layerId = 0; layerId < layers; layerId++)
-    //    {
-    //        var radiusLayer = radius - layerId * (radius / layers);
-    //        var originLayer = origin + normal * ((float)System.Math.Cos(System.Math.Asin(radiusLayer / radius)) * radius);
-    //        verticesByLayer[layerId] = GetCircleVertices(originLayer, normal, radiusLayer, segments);
-    //    }
-    //    return verticesByLayer;
-    //}
-
-
     // Get matrix from given axis and origin
     public static Matrix GetMatrix(Vector3 xAxis, Vector3 yAxis, Vector3 zAxis, Vector3 origin)
     {
@@ -142,50 +123,6 @@ public static class GfxMath
             M44 = 1,
         };
     }
-
-
-    //// Get viewport matrix
-    //public static Matrix GetMatrixViewport(in Viewport viewport)
-    //{
-    //    return new Matrix
-    //    {
-    //        M11 = viewport.Width * 0.5f,
-    //        M12 = 0,
-    //        M13 = 0,
-    //        M14 = 0,
-
-    //        M21 = 0,
-    //        M22 = -viewport.Height * 0.5f,
-    //        M23 = 0,
-    //        M24 = 0,
-
-    //        M31 = 0,
-    //        M32 = 0,
-    //        M33 = viewport.MaxZ - viewport.MinZ,
-    //        M34 = 0,
-
-    //        M41 = viewport.X + viewport.Width * 0.5f,
-    //        M42 = viewport.Y + viewport.Height * 0.5f,
-    //        M43 = viewport.MinZ,
-    //        M44 = 1
-    //    };
-    //}
-
-
-    // Get viewport matrix
-    //public static Matrix GetMatrixViewport(Size screenSize)
-    //{
-    //    return GetMatrixViewport(new Viewport
-    //    {
-    //        X = 0,
-    //        Y = 0,
-    //        Width = screenSize.Width,
-    //        Height = screenSize.Height,
-    //        MinZ = 0,
-    //        MaxZ = 1,
-    //    });
-    //}
-
 
     // Get orthogonal axis from given normal
     public static void GetOrthogonalAxis(Vector3 normal, out Vector3 xAxis, out Vector3 yAxis, out Vector3 zAxis)
