@@ -231,6 +231,8 @@ public class AimBot :
             aimDirectionDesired.AngleToSigned(aimDirection, new Vector3(0, 0, 1)),
             aimDirectionDesired.AngleToSigned(aimDirection, aimDirectionDesired.Cross(new Vector3(0, 0, 1)).Normalized())
         );
+        //aimAngles.X *= 10;
+        //aimAngles.Y *= 10;
     }
 
     /// Get pixels to move in a screen (from aim angles).
@@ -238,8 +240,6 @@ public class AimBot :
     private void GetAimPixels(Vector2 aimAngles, out Point aimPixels)
     {
         var fovRatio = 90.0 / GameData.Player.Fov;
-        aimAngles.X = aimAngles.X * 10;
-        aimAngles.Y = aimAngles.Y * 10;
         aimPixels = new Point
         (
             (int)Math.Round(aimAngles.X / AnglePerPixel * fovRatio),

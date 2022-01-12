@@ -39,7 +39,7 @@ public static class GfxMath
         var otherOnPlane = plane.ProjectVector(other).vector.Normalized();
 
         // get angle
-        var sign = vectorOnPlane.Cross(otherOnPlane).Dot(plane.Normal);
+        var sign = vectorOnPlane.Cross(otherOnPlane).Normalized().Dot(plane.Normal);
         return AngleBetweenUnitVectors(vectorOnPlane, otherOnPlane) * sign;
     }
 
