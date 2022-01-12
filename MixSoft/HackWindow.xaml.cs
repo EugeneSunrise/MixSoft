@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-namespace MixSoft;
+﻿namespace MixSoft;
 public partial class HackWindow : Window
 {
     #region Tokens
@@ -149,14 +147,18 @@ public partial class HackWindow : Window
         foreach (string s in knives) comboKnifeSelector.Items.Add(s);
     }
 
-    
-    private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+
+    private void Window_Closing(object sender, CancelEventArgs e)
     {
         Environment.Exit(0);
     }
     private void SoftGrid_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
-        this.DragMove();
+        try
+        {
+            this.DragMove();
+        }
+        catch (Exception) { }
     }
     private void btn_close_Click(object sender, RoutedEventArgs e)
     {
@@ -348,7 +350,7 @@ public partial class HackWindow : Window
 
     private void LoadSkins()
     {
-        var assembly = Assembly.GetExecutingAssembly();
+        var assembly = System.Reflection.Assembly.GetExecutingAssembly();
         string resourcePath = "MixSoft.Resources.Skins.dat";
 
         using (StreamReader reader = new StreamReader(assembly.GetManifestResourceStream(resourcePath)))
@@ -525,4 +527,10 @@ public partial class HackWindow : Window
         else Globals.SelectedKnife = "Talon";
     }
     #endregion
+
+    private void tbStartSkinz_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+        Injecting.StartFuckCs();
+        tbStartSkinz.IsEnabled = false;
+    }
 }

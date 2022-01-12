@@ -324,6 +324,16 @@
             <!--Visibility="Hidden"/>-->
 
             <TextBlock 
+                x:Name="tbStartSkinz"
+                ToolTip="Start SkinChanger (Inject nSkinz)"
+                Canvas.Left="112"
+                TextWrapping="Wrap"
+                Text="Start nSkinz"
+                FontSize="12"
+                Foreground="White"
+                Canvas.Top="2" MouseLeftButtonDown="tbStartSkinz_MouseLeftButtonDown"/>
+            
+            <TextBlock 
                 ToolTip="Aim On/Off: Shift + L, Update Skins: F7"
                 Canvas.Left="54"
                 TextWrapping="Wrap"
@@ -333,7 +343,7 @@
                 Canvas.Top="2"/>
 
             <TextBlock 
-                ToolTip="Ver. 3.0 (12.01.2022)"
+                ToolTip="Ver. 3.0 (13.01.2022)"
                 Canvas.Left="10"
                 TextWrapping="Wrap"
                 Text="About"

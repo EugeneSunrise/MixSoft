@@ -40,6 +40,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\hui.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>hui.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\hui.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>hui.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Resources\MixSoftEmpire.ico">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

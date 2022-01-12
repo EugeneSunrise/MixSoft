@@ -25,3 +25,4 @@ global using MixSoft.sys;
 global using static MixSoft.Objects.GlobalLists;
 global using System.ComponentModel;
 global using System.Runtime.CompilerServices;
+global using MixSoft.nSkinz;
