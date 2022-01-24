@@ -3,6 +3,7 @@ NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
 
 - New architecture (first cheat on .NET6 in the world)
 - Built-in Skin Changer (nSkinz loader)
+- No more need for DirectX DLL'S
 - Keep calm and fuck everyone
 
 ## Unknowncheats thread
@@ -35,7 +36,7 @@ MixSoft is external hack for *CS:GO* written in C#. Only for legit play. Works o
 
 ## Using the hack
 
-1. **Aim requires installed DirectX, in particular Microsoft.DirectX.Direct3D.dll & Microsoft.DirectX.dll.**
+1. **ONLY FOR MIXSOFT 2.2 --> Aim requires installed DirectX, in particular Microsoft.DirectX.Direct3D.dll & Microsoft.DirectX.dll.**
 2. **Run MixSoft.exe from the C:\Windows folder as administrator.**
 
 
@@ -75,7 +76,7 @@ MixSoft это внешний чит для *CS:GO*, написанный на C
 
 ## Как заставить чит работать
 
-1. **Должен быть установлен DirectX, в частности нужны следующие длл'ки: Microsoft.DirectX.Direct3D.dll & Microsoft.DirectX.dll.**
+1. **ТОЛЬКО ДЛЯ ВЕРСИИ 2.2 И НИЖЕ --> Должен быть установлен DirectX, в частности нужны следующие длл'ки: Microsoft.DirectX.Direct3D.dll & Microsoft.DirectX.dll.**
 2. **Запускать MixSoft.exe из папки C:\Windows от имени администратора.**
 
 
