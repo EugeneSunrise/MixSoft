@@ -1,3 +1,6 @@
+## NOTICE 24.03
+- New update 3.1 will be in ~april
+- Maybe add another skin changer and some optimization
 ## NOTICE
 NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
 
