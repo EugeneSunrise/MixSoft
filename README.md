@@ -1,6 +1,7 @@
-## NOTICE 24.03
-- New update 3.1 will be in ~april
-- Maybe add another skin changer and some optimization
+## NOTICE 08.04
+- New update 3.1 this month, just wait ~1-2 weeks
+- Osiris inventory changer(nSkinz will not be deleted)
+- Obfuscation 
 ## NOTICE
 NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
 
