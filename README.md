@@ -1,13 +1,9 @@
-## NOTICE 08.04
-- New update 3.1 this month, just wait ~1-2 weeks
-- Osiris inventory changer(nSkinz will not be deleted)
-- Obfuscation 
 ## NOTICE
 NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
 
-- New architecture (first cheat on .NET6 in the world)
-- Built-in Skin Changer (nSkinz loader)
-- No more need for DirectX DLL'S
+- .NET 6 
+- Skin Changer (nSkinz loader) + protection 
+- Osiris inventory changer + protection 
 - Keep calm and fuck everyone
 
 ## Unknowncheats thread
