@@ -7,6 +7,7 @@ NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
 - Also You can protect mixsoft by yourself, use vmprotect(crack)
 - Keep calm and fuck everyone
 
+- You can pre-order faceit cheat(not mixsoft), contact me in telegram: icesunrise
 ## Unknowncheats thread
 [Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
 
