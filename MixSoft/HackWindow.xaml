@@ -353,7 +353,7 @@
                 Canvas.Top="2"/>
 
             <TextBlock 
-                ToolTip="Ver. 3.0 (13.01.2022)"
+                ToolTip="Ver. 3.1 (23.04.2022)"
                 Canvas.Left="10"
                 TextWrapping="Wrap"
                 Text="About"
