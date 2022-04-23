@@ -530,7 +530,15 @@ public partial class HackWindow : Window
 
     private void tbStartSkinz_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
-        Injecting.StartFuckCs();
+        Injecting.StartNSkinz();
+        tbStartInvChanger.IsEnabled = false;
+        tbStartSkinz.IsEnabled = false;
+    }
+
+    private void tbStartInvChanger_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+        Injecting.StartInvChanger();
+        tbStartInvChanger.IsEnabled = false;
         tbStartSkinz.IsEnabled = false;
     }
 }

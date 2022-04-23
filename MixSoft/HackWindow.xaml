@@ -332,7 +332,17 @@
                 FontSize="12"
                 Foreground="White"
                 Canvas.Top="2" MouseLeftButtonDown="tbStartSkinz_MouseLeftButtonDown"/>
-            
+
+            <TextBlock 
+                x:Name="tbStartInvChanger"
+                ToolTip="Start Invertory Changer"
+                Canvas.Left="187"
+                TextWrapping="Wrap"
+                Text="Start Invertory Changer"
+                FontSize="12"
+                Foreground="White"
+                Canvas.Top="2" MouseLeftButtonDown="tbStartInvChanger_MouseLeftButtonDown"/>
+
             <TextBlock 
                 ToolTip="Aim On/Off: Shift + L, Update Skins: F7"
                 Canvas.Left="54"

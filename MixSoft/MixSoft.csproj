@@ -13,6 +13,8 @@
     <Copyright>Sunrise Studio</Copyright>
     <PackageIcon>MixSoftEmpire.ico</PackageIcon>
     <Description>FUCK VALVE</Description>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <Optimize>False</Optimize>
@@ -40,17 +42,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\hui.Designer.cs">
+    <Compile Update="Resources\protectedshit.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>hui.resx</DependentUpon>
+      <DependentUpon>protectedshit.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\realparasha.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>realparasha.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\hui.resx">
+    <EmbeddedResource Update="Resources\protectedshit.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>hui.Designer.cs</LastGenOutput>
+      <LastGenOutput>protectedshit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\realparasha.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>realparasha.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
