@@ -1,5 +1,5 @@
 ## NOTICE
-NEW VERSION READY TO DOWNLOAD --> CHECK RELEASES
+3.2 Update JULY!
 
 - .NET 6 
 - Skin Changer (nSkinz loader) + protection 
