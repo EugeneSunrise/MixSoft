@@ -1,5 +1,5 @@
 ## NOTICE
-3.2 Update August!
+3.2 Update September!
 
 - .NET 6 
 - Skin Changer (nSkinz loader) + protection 
