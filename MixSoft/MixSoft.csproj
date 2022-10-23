@@ -42,26 +42,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\protectedshit.Designer.cs">
+    <Compile Update="Resources\4eZaHueta.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>protectedshit.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\realparasha.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>realparasha.resx</DependentUpon>
+      <DependentUpon>4eZaHueta.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\protectedshit.resx">
+    <EmbeddedResource Update="Resources\4eZaHueta.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>protectedshit.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\realparasha.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>realparasha.Designer.cs</LastGenOutput>
+      <LastGenOutput>4eZaHueta.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

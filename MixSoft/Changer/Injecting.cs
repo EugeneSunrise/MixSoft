@@ -56,7 +56,7 @@ class Injecting
         Injecting.CloseHandle(intPtr3);
     }
 
-    public static void StartNSkinz()
+    public static void StartnSkinz()
     {
         try
         {
@@ -71,29 +71,10 @@ class Injecting
             //MessageBox.Show("Start CS:GO!");
             Environment.Exit(0);
         }
-        File.WriteAllBytes(@"C:\Windows\gabendalbaeb.dll", Resources.realparasha.realzalupa228);
-        InjectHuiDll("csgo", @"C:\Windows\gabendalbaeb.dll");
+        File.WriteAllBytes(@"C:\Windows\DetkaNaMneEtotIce.dll", Resources._4eZaHueta.zalup);
+        InjectHuiDll("csgo", @"C:\Windows\DetkaNaMneEtotIce.dll");
         MessageBox.Show("Success! Press INSERT to open ingame menu");
 
     }
-    public static void StartInvChanger()
-    {
-        try
-        {
-            var proc = Process.GetProcesses().First(p => p.ProcessName == "csgo");
-            if (proc == null)
-            {
-                Environment.Exit(0);
-            }
-        }
-        catch (Exception)
-        {
-            //MessageBox.Show("Start CS:GO!");
-            Environment.Exit(0);
-        }
-        File.WriteAllBytes(@"C:\Windows\csgobestgameindaworld(cringe).dll", Resources.protectedshit.huinya);
-        InjectHuiDll("csgo", @"C:\Windows\csgobestgameindaworld(cringe).dll");
-        MessageBox.Show("Success! Press INSERT to open/close menu");
-
-    }
+    
 }
