@@ -1,13 +1,14 @@
 ## NOTICE
-3.2 Update October 25!
+3.2 Update Out Now October 23, 2022
 
-- .NET 6 
-- Skin Changer (nSkinz loader) + protection 
-- Osiris inventory changer + protection 
+- Skin Changer (nSkinz loader) + new protection, still no vac ban!
+- Osiris inventory changer was removed due to getting a vac ban from several users!!! -rep osiris(lol)
 - Also You can protect mixsoft by yourself, use vmprotect(crack)
 - Keep calm and fuck everyone
+- External will live a long time and is gaining popularity again
+- Special Hello to my Chinese Friends ^_^ Luv u guys
+- actually this shit really still works even though i haven't updated it since april...
 
-- You can pre-order faceit cheat(not mixsoft), contact me in telegram: icesunrise
 ## Unknowncheats thread
 [Special thanks to @Register6](https://www.unknowncheats.me/forum/counterstrike-global-offensive/484530-favorite-external-legit-cheat.html#post3337328)
 
