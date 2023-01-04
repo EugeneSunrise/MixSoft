@@ -2,7 +2,7 @@
 3.2 Update Out Now October 23, 2022
 
 - Skin Changer (nSkinz loader) + new protection, still no vac ban!
-- Osiris inventory changer was removed due to getting a vac ban from several users!!! -rep osiris(lol)
+- Osiris inventory changer was removed due to getting a vac ban from several users!!! -rep osiris
 - Also You can protect mixsoft by yourself, use vmprotect(crack)
 - Keep calm and fuck everyone
 - External will live a long time and is gaining popularity again
