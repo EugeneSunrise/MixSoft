@@ -1,5 +1,5 @@
 ## NOTICE
-3.3 Update ~November(CS2)
+3.3 Update will be ready when I buy a PC :D (CS2)
 
 3.2 Update Out Now October 23, 2022
 
